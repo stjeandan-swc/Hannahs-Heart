@@ -8,7 +8,7 @@
 android {  
   defaultConfig {  
     generatedDensities = []
-    applicationId = "org.nativescript.HannahsHeart" 
+    applicationId = "org.nativescript.hannahsheart" 
     
     //override supported platforms
     // ndk {
