@@ -2,8 +2,11 @@ import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 
 import { AppRoutingModule } from '@src/app/app-routing.module';
+
+// Components
 import { AppComponent } from '@src/app/app.component';
 import { HomeComponent } from '@src/app/home/home.component';
+import { WelcomeLandingComponent } from '@src/app/welcome-landing/welcome-landing.component';
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -16,6 +19,7 @@ import { HomeComponent } from '@src/app/home/home.component';
   declarations: [
     AppComponent,
     HomeComponent,
+    WelcomeLandingComponent,
   ],
   imports: [
     NativeScriptModule,

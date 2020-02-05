@@ -1,0 +1,22 @@
+.blue-btn {
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.back-btn {
+    font-size: xx-large;
+    color: white;
+}
+
+.user-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.back-tab {
+    font-size: xx-large;
+}
+
+nav {
+    background-color: blue;
+}
