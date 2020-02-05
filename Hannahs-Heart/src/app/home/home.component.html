@@ -1,20 +1,76 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!--    Todo    
+    1. need to build address search input field.
+-->
+<div>
+  <img src="/assets/img/HannaLogo.png" alt="Applications Logo">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<div>
+  <p>Please fill in your information below to find a mental health professional in your area.</p>
+</div>
+<div>
+  <!--    Languages Form  ------------------------------------------------------------------------------>
+  <form class="form">
+      <p><b>Preferred Languages(s)</b></p>
+      <div>
+          <input type="checkbox" name="english" value="english"><label for="english"> English</label><br>
+          <input type="checkbox" name="french" value="french"><label for="french"> French</label><br>
+      </div>
+      <div class="dropdown">
+          <span>Select</span>
+          <div class="dropdown-content">
+              <p>placeholder</p>
+              <p>placeholder</p>
+              <p>placeholder</p>
+          </div>
+      </div>
+  </form>
+  <!--    Gender Form     ------------------------------------------------------------------------------>
+  <form class="form">
+      <p><b>Your Gender</b></p>
+      <div class="gender-container">
+          <input type="radio" name="gender" value="Female"><label for="Female">Female</label><br>
+          <input type="radio" name="gender" value="Male"><label for="Male">Male</label><br>
+          <input type="radio" name="gender" value="Trans Female"><label for="Trans Female">Trans Female</label><br>
+          <input type="radio" name="gender" value="Trans Male"><label for="Trans Male">Trans Male</label><br>
+          <input type="radio" name="gender" value="Other"><label for="Other">Other</label><br>
+      </div>
+  </form>
+  <!--    DOB Form        ------------------------------------------------------------------------------>
+  <form class="form">
+      <div class="dob">
+          <input type="date">
+      </div>
+  </form>
+  <!--    Treatment type  ------------------------------------------------------------------------------>
+  <form class="form">
+      <div>
+          <p>What is treatment being sought for?</p>
+          <div class="dropdown">
+              <span>Select</span>
+              <div class="dropdown-content">
+                  <p>placeholder</p>
+                  <p>placeholder</p>
+                  <p>placeholder</p>
+              </div>
+          </div>
+      </div>
+  </form>
+  <!--    Address     ---------------------------------------------------------------------------------->
+  <form class="form">
+      <div>
+          <p><b>Address</b></p>
+      </div>
+  </form>
+  <!--    Travel radius   ------------------------------------------------------------------------------>
+  <form class="form last">
+      <div>
+          <p><b>Travel Radius</b></p>
+          <div>
+              <input type="radio" name="distance" value="0-2"><label for="0-2">0-2 km</label><br>
+              <input type="radio" name="distance" value="2-20"><label for="2-20">2-20 km</label><br>
+              <input type="radio" name="distance" value="20plus"><label for="20plus">> 20 km</label><br>
+          </div>
+      </div>
+  </form>
+</div>
 
