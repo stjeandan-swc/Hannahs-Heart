@@ -1,20 +1,28 @@
-p {
-    text-align: center;
+.back-btn {
+    font-size: xx-large;
+    color: white;
 }
 
-button {
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
+.user-icon {
+    width: 25px;
+    height: 25px;
 }
 
-span {
+.back-tab {
+    font-size: xx-large;
+}
+
+nav {
+    background-color: blue;
+}
+
+.jumbotron {
+    background-color: white;
+    box-shadow: 8px 8px 10px rgb(177, 176, 176), -2px -2px 5px rgba(177, 176, 176, 0.5);
+}
+
+.dot {
+    font-size: 30px;
     color: rgb(132, 129, 27);
-}
-
-.dots {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: auto;
-    width: 10%;
+    margin: 0px 5px 0px 5px;
 }
