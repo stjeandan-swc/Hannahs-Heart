@@ -8,13 +8,15 @@ import { AppComponent } from '@src/app/app.component';
 import { HomeComponent } from '@src/app/home/home.component';
 import { WelcomeLandingComponent } from '@src/app/welcome-landing/welcome-landing.component';
 import { UserProfileComponent } from '@src/app/user-profile/user-profile.component';
+import { UpdateHcProviderComponent } from '@src/app/update-hc-provider/update-hc-provider.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WelcomeLandingComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    UpdateHcProviderComponent
   ],
   imports: [
     BrowserModule,
