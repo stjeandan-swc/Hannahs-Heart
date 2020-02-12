@@ -1,0 +1,9 @@
+ActionBar {
+    background-color: rgb(232, 40, 66);
+}
+
+Image {
+    width: 450px;
+    height: 450px;
+    margin-top: 50px;
+}
