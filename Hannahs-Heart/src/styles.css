@@ -11,17 +11,6 @@ html, body {
     box-sizing: border-box;
 }
 
-.form {
-    display: block;
-    width: 90%;
-    margin: auto;
-    margin-top: 2rem;
-    padding: 1rem;
-    
-    background-color: white;
-    box-shadow: 8px 8px 10px rgb(177, 176, 176), -2px -2px 5px rgba(177, 176, 176, 0.5);
-}
-
 .logo {
     display: block;
     width: 100%;
@@ -48,10 +37,6 @@ html, body {
     color: white;
 }
 
-.last {
-    margin-bottom: 2rem;
-}
-
 /*  Light grey font */
 .font-one {
     color: rgb(128, 129, 132);
@@ -72,12 +57,4 @@ html, body {
 /*  Microsoft Edge  */
 ::-ms-input-placeholder {
     color: rgba(146, 148, 151, 0.8);
-}
-
-@media only screen and (min-width: 600px) {
-
-}
-
-@media only screen and (min-width: 768px) {
-
 }

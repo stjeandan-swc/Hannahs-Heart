@@ -1,14 +1,23 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<ActionBar [title]="title"></ActionBar>
-<StackLayout  class="p-20">
-    <Label text="Welcome to {{ title }}!" class="h1 text-center" textWrap="true"></Label>
-</StackLayout>
+<ActionBar title="Find a Professional"></ActionBar>
 
-<FlexboxLayout class="container">
-    <StackLayout class="form">
-        <Label text="Name"></Label>
-        <StackLayout>
-            <TextField class="input" hint="userName" text="userName"></TextField>
-        </StackLayout>
+<StackLayout  class="p-20">
+    <Image src="~/assets/img/HannaLogo.png" stretch="aspectFill"></Image>
+    <Label class="description" text="Please fill in your information below to find
+a mental health professional in your area." textWrap="true"></Label>
+
+    <StackLayout androidElevation="12" class="container" orientation="vertical" width="250" height="210">
+        <Label class="form-label" text="Preffered Language(s)"></Label>
+
+        <CheckBox text="English" checked="false"></CheckBox>
+        <CheckBox text="French" checked="false"></CheckBox>
     </StackLayout>
-</FlexboxLayout>
+
+    <StackLayout androidElevation="12" class="container" orientation="vertical" width="250" height="210">
+        <Label class="form-label" text="Your Gender"></Label>
+
+        <CheckBox text="Female" checked="false" boxType="circle"></CheckBox>
+        <CheckBox text="Male" checked="false" boxType="circle"></CheckBox>
+        <CheckBox text="Trans Female" checked="false" boxType="circle"></CheckBox>
+        <CheckBox text="Trans Male" checked="false" boxType="circle"></CheckBox>
+    </StackLayout>
+</StackLayout>

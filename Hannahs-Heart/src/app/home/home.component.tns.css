@@ -1,0 +1,32 @@
+ActionBar {
+    background-color: rgb(232, 40, 66);
+}
+
+Image {
+    width: 450px;
+    height: 450px;
+    margin-top: 50px;
+}
+
+.description {
+    margin-top: 50px;
+    
+    font-size: medium;
+    text-align: center;
+}
+
+.form-label {
+    margin-top: 25px;
+    margin-left: 25px;
+
+    font-weight: 800;
+    font-size: xx-large;
+}
+
+.container {
+    margin-top: 50px;
+
+    
+    background-color: white;
+    box-shadow: 8px 8px 10px rgb(177, 176, 176), -2px -2px 5px rgba(177, 176, 176, 0.5);
+}

@@ -1,4 +1,4 @@
-img {
+#logo {
     display: block;
     width: 100%;
     max-width: 150px;
@@ -7,46 +7,20 @@ img {
     margin: auto;
 }
 
-p {
-    text-align: center;
-}
-
-input[type=checkbox], input[type=radio] {
-    position: relative;
-    width: 1.5rem;
-    height: 1.5rem;
-
-    color: white;
-}
-
-label {
-    display: inline-block;
-    position: absolute;
-
-    margin-top: 0.5rem;
-    text-indent: 0.25rem;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-
-    border: 1px solid black;
-    width: 100%;
-    margin-top: 0.5rem;
-    text-indent: 0.25rem;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 100%;
-    z-index: 1;
-
+.partition {
     background-color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 8px 8px 10px rgb(177, 176, 176), -2px -2px 5px rgba(177, 176, 176, 0.5);
 }
 
-.dropdown:hover .dropdown-content {
-    display: block;
+nav {
+    background-color: rgb(232, 40, 66);
+}
+
+.back-tab {
+    font-size: xx-large;
+}
+
+.user-icon {
+    width: 25px;
+    height: 25px;
 }

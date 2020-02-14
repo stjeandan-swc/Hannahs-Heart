@@ -1,76 +1,85 @@
-<!--    Todo    
-    1. need to build address search input field.
--->
+<nav class="navbar last">
+    <div class="container-fluid">
+        <div class="row nav-brand">
+            <p class="font-white back-tab mx-3"><b><</b></p>
+            <p class="font-white back-tab">Find a Professional</p>
+        </div>
+        <div class="row">
+            <div class="col float-right text-center mr-4">
+                <img class="user-icon" src="/assets/img/thumbnail_User_Icon_Blue.png" alt="user icon"><br>
+                <span class="font-white">name</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
 <div>
-  <img src="/assets/img/HannaLogo.png" alt="Applications Logo">
+  <img id="logo" src="/assets/img/HannaLogo.png" alt="Applications Logo">
 </div>
 <div>
-  <p>Please fill in your information below to find a mental health professional in your area.</p>
-</div>
-<div>
-  <!--    Languages Form  ------------------------------------------------------------------------------>
-  <form class="form">
-      <p><b>Preferred Languages(s)</b></p>
-      <div>
-          <input type="checkbox" name="english" value="english"><label for="english"> English</label><br>
-          <input type="checkbox" name="french" value="french"><label for="french"> French</label><br>
-      </div>
-      <div class="dropdown">
-          <span>Select</span>
-          <div class="dropdown-content">
-              <p>placeholder</p>
-              <p>placeholder</p>
-              <p>placeholder</p>
-          </div>
-      </div>
-  </form>
-  <!--    Gender Form     ------------------------------------------------------------------------------>
-  <form class="form">
-      <p><b>Your Gender</b></p>
-      <div class="gender-container">
-          <input type="radio" name="gender" value="Female"><label for="Female">Female</label><br>
-          <input type="radio" name="gender" value="Male"><label for="Male">Male</label><br>
-          <input type="radio" name="gender" value="Trans Female"><label for="Trans Female">Trans Female</label><br>
-          <input type="radio" name="gender" value="Trans Male"><label for="Trans Male">Trans Male</label><br>
-          <input type="radio" name="gender" value="Other"><label for="Other">Other</label><br>
-      </div>
-  </form>
-  <!--    DOB Form        ------------------------------------------------------------------------------>
-  <form class="form">
-      <div class="dob">
-          <input type="date">
-      </div>
-  </form>
-  <!--    Treatment type  ------------------------------------------------------------------------------>
-  <form class="form">
-      <div>
-          <p>What is treatment being sought for?</p>
-          <div class="dropdown">
-              <span>Select</span>
-              <div class="dropdown-content">
-                  <p>placeholder</p>
-                  <p>placeholder</p>
-                  <p>placeholder</p>
-              </div>
-          </div>
-      </div>
-  </form>
-  <!--    Address     ---------------------------------------------------------------------------------->
-  <form class="form">
-      <div>
-          <p><b>Address</b></p>
-      </div>
-  </form>
-  <!--    Travel radius   ------------------------------------------------------------------------------>
-  <form class="form last">
-      <div>
-          <p><b>Travel Radius</b></p>
-          <div>
-              <input type="radio" name="distance" value="0-2"><label for="0-2">0-2 km</label><br>
-              <input type="radio" name="distance" value="2-20"><label for="2-20">2-20 km</label><br>
-              <input type="radio" name="distance" value="20plus"><label for="20plus">> 20 km</label><br>
-          </div>
-      </div>
-  </form>
+  <p class="text-center mt-3">Please fill in your information below to find a mental health professional in your area.</p>
 </div>
 
+<div class="container w-50">
+    <div class="row">
+        <form action="" class="col-8 justify-content-around d-flex flex-column mx-auto">
+
+            <div class="partition">
+                <p class="ml-4 mt-4"><b>Preferred Languages(s)</b></p>
+                <input class="ml-4" type="checkbox" name="english" value="english">
+                <label class="ml-2" for="english"> English</label><br>
+                <input class="ml-4" type="checkbox" name="french" value="french">
+                <label class="ml-2" for="french"> French</label><br>
+                <div>
+                    <select id="other-language" class="ml-4 mb-4 w-75" name="other-language">
+                        <option class="ml-2">1</option>
+                        <option class="ml-2">2</option>
+                        <option class="ml-2">3</option>
+                        <option class="ml-2">4</option>
+                        <option class="ml-2">5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="partition mt-5">
+                <p class="ml-4 mt-4"><b>Your Gender</b></p>
+                <input class="ml-4" type="radio" name="gender" value="Female">
+                <label class="ml-2" for="Female">Female</label><br>
+                <input class="ml-4" type="radio" name="gender" value="Male">
+                <label class="ml-2" for="Male">Male</label><br>
+                <input class="ml-4" type="radio" name="gender" value="Trans Female">
+                <label class="ml-2" for="Trans Female">Trans Female</label><br>
+                <input class="ml-4" type="radio" name="gender" value="Trans Male">
+                <label class="ml-2" for="Trans Male">Trans Male</label><br>
+                <input class="ml-4 mb-4" type="radio" name="gender" value="Other">
+                <label class="ml-2" for="Other">Other</label><br>
+            </div>
+
+            <div class="partition mt-5">
+                <p class="ml-4 mt-4"><b>Date of birth</b></p>
+                <input class="ml-4 mb-4 w-75" type="date">
+            </div>
+
+            <div class="partition mt-5">
+                <p class="ml-4 mt-4"><b>What is treatment being sought for?</b></p>
+                <select id="treatment-type" class="ml-4 mb-4 w-75" name="treatment-type">
+                    <option class="ml-2">1</option>
+                    <option class="ml-2">2</option>
+                    <option class="ml-2">3</option>
+                    <option class="ml-2">4</option>
+                    <option class="ml-2">5</option>
+                </select>
+            </div>
+
+            <div class="partition mt-5 mb-5">
+                <p class="ml-4"><b>Travel Radius</b></p>
+                <input class="ml-4" type="radio" name="distance" value="0-2">
+                <label class="ml-2" for="0-2">0-2 km</label><br>
+                <input class="ml-4" type="radio" name="distance" value="2-20">
+                <label class="ml-2" for="2-20">2-20 km</label><br>
+                <input class="ml-4" type="radio" name="distance" value="20plus">
+                <label class="ml-2" for="20plus">> 20 km</label><br>
+            </div>
+        </form>
+    </div>
+</div>
