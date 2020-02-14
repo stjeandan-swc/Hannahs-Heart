@@ -1,5 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
+import { TNSCheckBoxModule } from '@nstudio/nativescript-checkbox/angular';
 
 import { AppRoutingModule } from '@src/app/app-routing.module';
 
@@ -26,6 +27,7 @@ import { UpdateHcProviderComponent } from '@src/app/update-hc-provider/update-hc
   imports: [
     NativeScriptModule,
     AppRoutingModule,
+    TNSCheckBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent],
