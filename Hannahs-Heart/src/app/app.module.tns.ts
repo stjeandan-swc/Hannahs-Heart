@@ -9,6 +9,7 @@ import { AppComponent } from '@src/app/app.component';
 import { HomeComponent } from '@src/app/home/home.component';
 import { WelcomeLandingComponent } from '@src/app/welcome-landing/welcome-landing.component';
 import { UpdateHcProviderComponent } from '@src/app/update-hc-provider/update-hc-provider.component';
+import { LoginPageComponent } from '@src/app/login-page/login-page.component';
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -23,6 +24,7 @@ import { UpdateHcProviderComponent } from '@src/app/update-hc-provider/update-hc
     HomeComponent,
     WelcomeLandingComponent,
     UpdateHcProviderComponent,
+    LoginPageComponent,
   ],
   imports: [
     NativeScriptModule,
