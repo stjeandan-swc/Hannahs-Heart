@@ -7,6 +7,42 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateHcProviderComponent implements OnInit {
 
+  alphaList = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+          'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+  doctorsList = [
+    {
+      fistName: 'Dan',
+      lastName: 'St-Jean',
+      specialty: 'Counsellor',
+      gender: 'M'
+    },
+    {
+      fistName: 'Julia',
+      lastName: 'Dunayeva',
+      specialty: 'Therapist',
+      gender: 'F'
+    },
+    {
+      fistName: 'Don',
+      lastName: 'Valintine',
+      specialty: 'Psychologist',
+      gender: 'M'
+    },
+    {
+      fistName: 'Helen',
+      lastName: 'Adler',
+      specialty: 'Counsellor',
+      gender: 'F'
+    },
+    {
+      fistName: 'Sara',
+      lastName: 'Finch',
+      specialty: 'Psychologist',
+      gender: 'F'
+    }
+  ];
+
   constructor() { }
 
   ngOnInit() {

@@ -10,6 +10,7 @@ import { WelcomeLandingComponent } from '@src/app/welcome-landing/welcome-landin
 import { UserProfileComponent } from '@src/app/user-profile/user-profile.component';
 import { UpdateHcProviderComponent } from '@src/app/update-hc-provider/update-hc-provider.component';
 import { LoginPageComponent } from '@src/app/login-page/login-page.component';
+import { UpdateEmployeesComponent } from '@src/app/update-employees/update-employees.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginPageComponent } from '@src/app/login-page/login-page.component';
     WelcomeLandingComponent,
     UserProfileComponent,
     UpdateHcProviderComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    UpdateEmployeesComponent
   ],
   imports: [
     BrowserModule,

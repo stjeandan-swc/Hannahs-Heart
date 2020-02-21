@@ -21,7 +21,47 @@
     </div>
     <div class="row">
         <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 mx-auto">
-            <input class="w-100" type="text" placeholder="Search by Name">
+            <input class="search-bar form-group w-100 h-100" type="text" placeholder="Search by Name">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div id="alphabet-search" class="mt-4 d-flex justify-content-around">
+            <button class="btn btn-outline text-white" *ngFor="let letter of alphaList">
+                {{letter}}
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class="col-10">
+            
+        </div>
+        <div class="col-1">
+            <p class="text-center">Gender</p>
+        </div>
+        <div class="col-1">
+
+        </div>
+    </div>
+    <div id="doctor-list">
+        <div class="row table" *ngFor="let doctor of doctorsList;">
+            <div class="col-10">
+                <p class="ml-3"><img class="pencil mr-2" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="">
+                    <button class="btn btn-link p-0 mb-1">{{doctor.lastName}}</button>, {{doctor.fistName}}
+                </p>
+                <p class="ml-5">{{doctor.specialty}}</p>
+            </div>
+            <div class="col-1">
+                <p class="text-center">{{doctor.gender}}</p>
+            </div>
+            <div class="col-1">
+                <p>G</p> <!-- Need to get a trash can image-->
+            </div>
         </div>
     </div>
 </div>
