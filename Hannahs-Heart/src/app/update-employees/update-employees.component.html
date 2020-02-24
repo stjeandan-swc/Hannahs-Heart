@@ -1,0 +1,45 @@
+<nav class="navbar last">
+    <div class="container-fluid">
+        <div class="row nav-brand">
+            <p class="font-white back-tab mx-3"><b><</b></p>
+            <p class="font-white back-tab">Update Employees</p>
+        </div>
+        <div class="row">
+            <div class="col float-right text-center mr-4">
+                <img class="user-icon" src="/assets/img/thumbnail_Admin_Icon_Gold.png" alt="user icon"><br>
+                <span class="font-white">name</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <button class="btn float-right mt-3">Add Employee <span class="text-primary">+</span></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-10 col-sm-10 mx-auto">
+            <input class="search-bar w-100 form-group h-100" type="text" placeholder="Search by Name">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-5">
+    <div id="doctor-list">
+        <div class="row table" *ngFor="let employee of employeesList;">
+            <div class="col-8">
+                <p class="ml-3"><img class="pencil mr-2" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="edit icon">
+                    <button class="btn btn-link p-0 mb-1">{{employee.lastName}}</button>, {{employee.fistName}}
+                </p>
+            </div>
+            <div class="col-3">
+                <p class="ml-5">{{employee.specialty}}</p>
+            </div>
+            <div class="col-1">
+                <p>G</p> <!-- Need to get a trash can image-->
+            </div>
+        </div>
+    </div>
+</div>
