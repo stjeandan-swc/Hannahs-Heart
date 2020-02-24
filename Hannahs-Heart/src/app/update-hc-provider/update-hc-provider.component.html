@@ -28,16 +28,16 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div id="alphabet-search" class="mt-4 d-flex justify-content-around">
-            <button class="btn btn-outline text-white" *ngFor="let letter of alphaList">
+        <div id="alphabet-search" class="mt-4 d-flex justify-content-center">
+            <button class="btn btn-sm btn-outline text-white d-flex" *ngFor="let letter of alphaList">
                 {{letter}}
             </button>
         </div>
     </div>
 </div>
 
-<div class="container-fluid">
-    <div class="row mt-4">
+<div class="container-fluid p-0">
+    <div class="row mt-4 w-100">
         <div class="col-10">
             
         </div>
@@ -49,12 +49,12 @@
         </div>
     </div>
     <div id="doctor-list">
-        <div class="row table" *ngFor="let doctor of doctorsList;">
+        <div class="row table w-100" *ngFor="let doctor of doctorsList;">
             <div class="col-10">
-                <p class="ml-3"><img class="pencil mr-2" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="">
+                <p class="ml-3 mb-0"><img class="pencil mr-2" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="">
                     <button class="btn btn-link p-0 mb-1">{{doctor.lastName}}</button>, {{doctor.fistName}}
                 </p>
-                <p class="ml-5">{{doctor.specialty}}</p>
+                <p class="ml-5 mb-0">{{doctor.specialty}}</p>
             </div>
             <div class="col-1">
                 <p class="text-center">{{doctor.gender}}</p>
@@ -65,3 +65,29 @@
         </div>
     </div>
 </div>
+
+<!--
+<table class="table table-sm">
+    <thead>
+        <tr>
+            <th scope="col" width="3%"></th>
+            <th scope="col" width="77%"></th>
+            <th scope="col" width="10%" class="text-center">Gender</th>
+            <th scope="col" width="10%"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let doctor of doctorsList;">
+            <th scope="row">
+                <img class="pencil ml-2 mt-2" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="">
+            </th>
+            <td>
+                <button class="btn btn-link p-0 mb-1 ml-3">{{doctor.lastName}}</button>, {{doctor.fistName}}
+                <p class="ml-4">{{doctor.specialty}}</p>
+            </td>
+            <td class="text-center">{{doctor.gender}}</td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+-->
