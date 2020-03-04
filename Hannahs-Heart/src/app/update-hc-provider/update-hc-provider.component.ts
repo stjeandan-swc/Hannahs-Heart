@@ -43,9 +43,24 @@ export class UpdateHcProviderComponent implements OnInit {
     }
   ];
 
-  constructor() { }
+  showForm: Boolean = false;
+
+  constructor() {}
 
   ngOnInit() {
   }
 
+  openForm() {
+    document.getElementById('overlay').style.display = 'block';
+    this.toggleForm();
+  }
+
+  closeForm() {
+    document.getElementById('overlay').style.display = 'none';
+    this.toggleForm();
+  }
+
+  toggleForm() {
+    this.showForm = !this.showForm;
+  }
 }
