@@ -11,6 +11,7 @@ import { UserProfileComponent } from '@src/app/user-profile/user-profile.compone
 import { UpdateHcProviderComponent } from '@src/app/update-hc-provider/update-hc-provider.component';
 import { LoginPageComponent } from '@src/app/login-page/login-page.component';
 import { UpdateEmployeesComponent } from '@src/app/update-employees/update-employees.component';
+import { EnterDataFormComponent } from '@src/app/enter-data-form/enter-data-form.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UpdateEmployeesComponent } from '@src/app/update-employees/update-emplo
     UserProfileComponent,
     UpdateHcProviderComponent,
     LoginPageComponent,
-    UpdateEmployeesComponent
+    UpdateEmployeesComponent,
+    EnterDataFormComponent
   ],
   imports: [
     BrowserModule,

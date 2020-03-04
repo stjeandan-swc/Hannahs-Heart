@@ -13,10 +13,16 @@
     </div>
 </nav>
 
+<!-- Background overlay for data entry form -->
+<div id="overlay" (click)="closeForm()"></div>
+
 <div class="container">
     <div class="row">
         <div class="col">
-            <button class="btn float-right mt-3">Add Provider <span class="text-primary">+</span></button>
+            <button id="entry-form" class="btn float-right mt-3" value="entry-form" (click)="openForm()">Add Provider 
+                <span class="text-primary">+</span>
+            </button>
+            <app-enter-data-form [showForm]='showForm'></app-enter-data-form>
         </div>
     </div>
     <div class="row">
@@ -26,6 +32,8 @@
     </div>
 </div>
 
+
+<!--    This is causing issues with scaleablility "letters would have to be to small to be effective"    
 <div class="container-fluid">
     <div class="row">
         <div id="alphabet-search" class="mt-4 d-flex justify-content-center">
@@ -35,6 +43,7 @@
         </div>
     </div>
 </div>
+-->
 
 <div class="container-fluid p-0">
     <div class="row mt-4 w-100">
@@ -65,29 +74,3 @@
         </div>
     </div>
 </div>
-
-<!--
-<table class="table table-sm">
-    <thead>
-        <tr>
-            <th scope="col" width="3%"></th>
-            <th scope="col" width="77%"></th>
-            <th scope="col" width="10%" class="text-center">Gender</th>
-            <th scope="col" width="10%"></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let doctor of doctorsList;">
-            <th scope="row">
-                <img class="pencil ml-2 mt-2" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="">
-            </th>
-            <td>
-                <button class="btn btn-link p-0 mb-1 ml-3">{{doctor.lastName}}</button>, {{doctor.fistName}}
-                <p class="ml-4">{{doctor.specialty}}</p>
-            </td>
-            <td class="text-center">{{doctor.gender}}</td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
--->
