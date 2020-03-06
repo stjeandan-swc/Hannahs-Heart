@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from '@src/app/app-routing.module';
 
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+
 // Components
 import { AppComponent } from '@src/app/app.component';
 import { HomeComponent } from '@src/app/home/home.component';
@@ -27,6 +29,7 @@ import { EnterDataFormComponent } from '@src/app/enter-data-form/enter-data-form
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgMultiSelectDropDownModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,8 +2,65 @@
 <div *ngIf='showForm' class="flex-container">
     <form action="submit">
         <div class="text-center">
-            <img class="my-3 pencil" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="">
+            <img class="my-4 pencil" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="">
         </div>
-        
+        <div class="form-group row">
+            <label for="firstName" class="ml-5 mr-2 col-2 col-form-label">First Name</label>
+            <input type="text" class="form-control col-8">
+        </div>
+        <div class="form-group row">
+            <label for="lastName" class="ml-5 mr-2 col-2 col-form-label">Last Name</label>
+            <input type="text" class="form-control col-8">
+        </div>
+        <div class="form-group row">
+            <label for="discipline" class="ml-5 mr-2 col-2 col-form-label">Discipline</label>
+            <input type="text" class="form-control col-8">
+        </div>
+        <!--    This should be a select option M, F, Trans, Non-Binary -->
+        <div class="form-group row">
+            <label for="gender" class="ml-5 mr-2 col-2 col-form-label">Gender</label>
+            <input type="text" class="form-control col-8">
+        </div>
+        <!--------------------------------------------------------------->
+        <div class="form-group row">
+            <label for="address" class="ml-5 mr-2 col-2 col-form-label">Address</label>
+            <textarea type="text" class="form-control col-8"></textarea>
+        </div>
+        <div class="form-group row">
+            <label for="Phone" class="ml-5 mr-2 col-2 col-form-label">Phone</label>
+            <input type="tel" class="form-control col-8">
+        </div>
+        <div class="form-group row">
+            <label for="cell" class="ml-5 mr-2 col-2 col-form-label">Cell</label>
+            <input type="tel" class="form-control col-8">
+        </div>
+        <div class="form-group row">
+            <label for="ageRange" class="ml-5 mr-2 col-2 col-form-label">Age Range</label>
+            <div class="col-2 text-center">
+                <label for="all">All</label><br>
+                <input type="checkbox">
+            </div>
+            <div class="col-3 text-center">
+                <label for="minAge">Min Age</label><br>
+                <input type="number">
+            </div>
+            <div class="col-3 text-center">
+                <label for="maxAge">Max Age</label><br>
+                <input type="number">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="gender(s)" class="ml-5 mr-2 col-2 col-form-label">Gender(s)</label>
+            <div id="genderList" class="drop-down-checklist col-8 form-control">
+                <span class="anchor">Select</span>
+                <ul class="items">
+                    <li><input type="checkbox">Male</li>
+                    <li><input type="checkbox">Female</li>
+                    <li><input type="checkbox">Trans Male</li>
+                    <li><input type="checkbox">Trans Female</li>
+                    <li><input type="checkbox">Other</li>
+                </ul>
+            </div>
+        </div>
     </form>
 </div>
