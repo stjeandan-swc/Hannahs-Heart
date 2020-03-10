@@ -1,6 +1,6 @@
 
 <div *ngIf='showForm' class="flex-container">
-    <form action="submit">
+    <form action="submit" class="mb-5">
         <div class="text-center">
             <img class="my-4 pencil" src="/assets/img/thumbnail_Pencil_Icon_Gold.png" alt="">
         </div>
@@ -34,33 +34,75 @@
             <label for="cell" class="ml-5 mr-2 col-2 col-form-label">Cell</label>
             <input type="tel" class="form-control col-8">
         </div>
+        <!--    Gender Dropdown Menu    -->
         <div class="form-group row">
             <label for="ageRange" class="ml-5 mr-2 col-2 col-form-label">Age Range</label>
-            <div class="col-2 text-center">
+            <div class="col-1 text-center">
                 <label for="all">All</label><br>
-                <input type="checkbox">
+                <input type="checkbox" class="mt-2">
             </div>
             <div class="col-3 text-center">
                 <label for="minAge">Min Age</label><br>
-                <input type="number">
+                <input type="number" class="border">
             </div>
             <div class="col-3 text-center">
                 <label for="maxAge">Max Age</label><br>
-                <input type="number">
+                <input type="number" class="border">
             </div>
         </div>
+        <!--    Gender dropdown menu    -->
         <div class="form-group row">
-            <label for="gender(s)" class="ml-5 mr-2 col-2 col-form-label">Gender(s)</label>
-            <div id="genderList" class="drop-down-checklist col-8 form-control">
-                <span class="anchor">Select</span>
-                <ul class="items">
-                    <li><input type="checkbox">Male</li>
-                    <li><input type="checkbox">Female</li>
-                    <li><input type="checkbox">Trans Male</li>
-                    <li><input type="checkbox">Trans Female</li>
-                    <li><input type="checkbox">Other</li>
-                </ul>
-            </div>
+            <label class="ml-5 mr-2 col-2 col-form-label">Gender(s)</label>
+            <div class="col-8">
+                <div ngbDropdown>
+                    <span id="genderDropdown" class="btn btn-outline border w-100" ngbDropdownToggle>Select</span>
+                    <div ngbDropdownMenu aria-labelledby="genderDropdown">
+                        <input type="checkbox" name="all" class="mx-3"><label for="all">All</label><br>
+                        <input type="checkbox" name="male" class="mx-3"><label for="male">Male</label><br>
+                        <input type="checkbox" name="female" class="mx-3"><label for="female">Female</label><br>
+                        <input type="checkbox" name="trans male" class="mx-3"><label for="trans male">Trans Male</label><br>
+                        <input type="checkbox" name="trans female" class="mx-3"><label for="trans female">Trans Female</label><br>
+                        <input type="checkbox" name="other" class="mx-3"><label for="other">Other</label><br>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--    language dropdown menu    -->
+        <div class="form-group row">
+            <label class="ml-5 mr-2 col-2 col-form-label">Language(s)</label>
+            <div class="col-8">
+                <div ngbDropdown>
+                    <span id="languageDropdown" class="btn btn-outline border w-100" ngbDropdownToggle>Select</span>
+                    <div ngbDropdownMenu aria-labelledby="languageDropdown">
+                        <input type="checkbox" name="english" class="mx-3"><label for="english">English</label><br>
+                        <input type="checkbox" name="french" class="mx-3"><label for="french">French</label><br>
+                        <input type="checkbox" name="arbic" class="mx-3"><label for="arbic">Arbic</label><br>
+                        <input type="checkbox" name="mandarin" class="mx-3"><label for="mandarin">Mandarin</label><br>
+                        <input type="checkbox" name="spanish" class="mx-3"><label for="spanish">Spanish</label><br>
+                        <input type="checkbox" name="Other" class="mx-3"><label for="Other">Other</label><br>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <!--    Services dropdown menu    -->
+        <div class="form-group row">
+            <label class="ml-5 mr-2 col-2 col-form-label">Service(s)</label>
+            <div class="col-8">
+                <div ngbDropdown>
+                    <span id="serviceDropdown" class="btn btn-outline border w-100" ngbDropdownToggle>Select</span>
+                    <div ngbDropdownMenu aria-labelledby="sweviceDropdown">
+                        <input type="checkbox" name="anxiety" class="mx-3"><label for="anxiety">Anxiety</label><br>
+                        <input type="checkbox" name="mood" class="mx-3"><label for="mood">Mood</label><br>
+                        <input type="checkbox" name="psychotic" class="mx-3"><label for="psychotic">Psychotic</label><br>
+                        <input type="checkbox" name="eatting" class="mx-3"><label for="eatting">Eatting</label><br>
+                        <input type="checkbox" name="personality" class="mx-3"><label for="personality">Personality</label><br>
+                        <input type="checkbox" name="Other" class="mx-3"><label for="Other">Other</label><br>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary w-25 my-4">Save</button>
         </div>
     </form>
 </div>
