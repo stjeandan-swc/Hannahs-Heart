@@ -12,6 +12,7 @@ import { UpdateHcProviderComponent } from '@src/app/update-hc-provider/update-hc
 import { LoginPageComponent } from '@src/app/login-page/login-page.component';
 import { UpdateEmployeesComponent } from '@src/app/update-employees/update-employees.component';
 import { EnterDataFormComponent } from '@src/app/enter-data-form/enter-data-form.component';
+import { DeleteConfirmationComponent } from '@src/app/delete-confirmation/delete-confirmation.component';
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -29,6 +30,7 @@ import { EnterDataFormComponent } from '@src/app/enter-data-form/enter-data-form
     LoginPageComponent,
     UpdateEmployeesComponent,
     EnterDataFormComponent,
+    DeleteConfirmationComponent,
   ],
   imports: [
     NativeScriptModule,

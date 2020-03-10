@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from '@src/app/app-routing.module';
 
-import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // Components
 import { AppComponent } from '@src/app/app.component';
@@ -14,6 +14,7 @@ import { UpdateHcProviderComponent } from '@src/app/update-hc-provider/update-hc
 import { LoginPageComponent } from '@src/app/login-page/login-page.component';
 import { UpdateEmployeesComponent } from '@src/app/update-employees/update-employees.component';
 import { EnterDataFormComponent } from '@src/app/enter-data-form/enter-data-form.component';
+import { DeleteConfirmationComponent } from '@src/app/delete-confirmation/delete-confirmation.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +25,13 @@ import { EnterDataFormComponent } from '@src/app/enter-data-form/enter-data-form
     UpdateHcProviderComponent,
     LoginPageComponent,
     UpdateEmployeesComponent,
-    EnterDataFormComponent
+    EnterDataFormComponent,
+    DeleteConfirmationComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgMultiSelectDropDownModule.forRoot(),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
