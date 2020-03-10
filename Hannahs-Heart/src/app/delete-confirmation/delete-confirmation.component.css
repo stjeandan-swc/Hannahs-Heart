@@ -1,0 +1,18 @@
+.row {
+    margin-top: 10%;
+}
+
+.delete-container {
+    background-color: white;
+    font-size: large;
+    line-height: 0.75rem;
+}
+
+.pencil {
+    width: 40px;
+    height: 40px;
+}
+
+button {
+    margin-top: -25px;
+}
